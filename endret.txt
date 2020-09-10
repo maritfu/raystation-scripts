@@ -1,0 +1,41 @@
+kommenter ut ?
+ts_beam_set.photon_energy_for_curative_fractionations_test() #?
+#ts_beam.stereotactic_beam_distribution_mu_test()
+#ts_beam.stereotactic_mu_constraints_for_multiple_beams()
+#ts_beam.stereotactic_mu_constraints_for_single_beam()
+
+Fikseliste:
+- ref-punkt test, ref punkt i riktig serie - DIBH serie? Test om poi_geometry\defined testen virker, MÅ TESTES OK
+- Test:  fripust  "Body" (Pasientkontur) som volumtype "Control". MÅ TESTES OK
+- Lage ny couch funksjon def-skript tom Couch + Body = External, MÅ TESTES OK
+- Test på samme isosenter alle beamset, MÅ TESTES OK
+- Beamnavn gantryvinker både test og planskript MÅ TESTES OK
+- Test label for Bryst. MÅ TESTES OK
+- functions\beam_set_functions\add_prescription MÅ TESTES OK
+- rt_classes\beam_set_label MÅ TESTES OK
+- ts_classes\ts_label, MÅ TESTES OK
+- ts_optmization\constrain_leaf_motion_test(self) MÅ TESTES OK
+- ts_classes\ts_structure_set\external_ptv_bounding_test(self) (bytta ut med body) MÅ TESTES OK
+- ts_classes\ts_structure_set\external_bounding_test(self)(bytta ut med body) MÅ TESTES OK
+- ts_classes\ts_beam_set\machine_test  MÅ TESTES OK
+- ts_classes\ts_beam_set\beam_number_test MÅ TESTES OK
+- ts_classes\ts_beam_set\technique_test(self) OK
+- ts_classes\ts_beam_set\beam_energy_equality_test(self) MÅ TESTES OK
+- ts_classes\ts_beam\collimator_angle_of_arc_test(self) MÅ TESTES OK
+- ts_classes\ts_beam\energy_of_arc_test(self) MÅ TESTES OK
+- ts_classes\ts_beam.asymmetric_jaw_opening_for_filter_free_energies(self) - maskin MÅ TESTES OK
+- ts_classes\ts_beam.arc_gantry_spacing_test(self) MÅ TESTES OK
+- ts_classes\ts_beam.name_of_arc_test(self) MÅ TESTES OK
+
+- patient_model_functions: create_external_body_and_couch_geometry(pm, examination, ss) fiks i def_site!
+- Volumer og marginer, hva settes opp DEF: Hjerne, Bryst, Lunge, Blære, Gyn, Rektum, Prostata, Palliativ, HodeHals
+- GUI DEF-skript
+- Objectives og Clinical goals alle diagnoser: først de med skikkelige templat (toleransedoser og farger?)
+- Hvilke buer skal settes opp? 
+- Mamma VMAT delen til Jomar
+- planskript: hvilket dosegrid? innstillinger oppsett mamma? Couch? Kommentere ut i plan. Lage mask? 
+  Oppsett energier? Endre oppsett beam set? Adapt optimization?
+- Test som sjekker MIP AVG lungestereotaksi
+- Får vi til å finne snitttykkelse? Legge inn i dosegrid test
+- prescription_type_test() near max for konv bryst
+
